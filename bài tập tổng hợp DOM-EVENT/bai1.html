@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai1</title>
+</head>
+<body>
+      <!-- 
+        Bài tập 1: xây dựng giao diện gồm form, trong form có các ô input
+        dùng để nhập dữ liệu mã sinh viên, tên sinh viên và button submit.
+        Gắn các sự kiện sau:
+        1. Gắn vào ô input mã sinh viên sự kiện input để thông báo 
+        ra giá trị vừa nhập - Cách 1
+        2. Gắn vào ô input tên sinh viên sự kiện change để thông báo giá 
+        trị vừa nhập - Cách 2
+        3. Gắn vào button submit sự kiện click và thông báo ra là bạn vừa
+        submit - Cách 3
+     -->
+     <script>
+        document.body.innerHTML += `
+        <div class="form">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" class="fullname" placeholder="Vui lòng nhập tên"><br/>
+        <label for="studentId">Mã sinh viên</label>
+        <input type="text" oninput="inputStudentId()" id="studentId" class="studentId" placeholder="Vui lòng nhập mã sinh viên"><br/>
+        <button type="submit" id="btnClick">Lưu lại</button>
+     </div>
+        `
+        // 1. Gắn vào ô input mã sinh viên sự kiện input để thông báo 
+        // ra giá trị vừa nhập - Cách 1
+        function inputStudentId (){
+          alert("FUK-230508");
+        };
+        // 2. Gắn vào ô input tên sinh viên sự kiện change để thông báo giá 
+        // trị vừa nhập - Cách 2
+        let inputFullName = document.getElementById("fullname");
+        inputFullName.addEventListener("change",function(){
+            alert("Tran Tien Cuong");
+        });
+
+        //3. Gắn vào button submit sự kiện click và thông báo ra là bạn vừa
+        // submit - Cách 3
+        let btnClick = document.getElementById("btnClick");
+        btnClick.onclick = function() {
+            alert("Bạn vừa click vào button");
+        };
+        
+     </script>
+</body>
+</html>

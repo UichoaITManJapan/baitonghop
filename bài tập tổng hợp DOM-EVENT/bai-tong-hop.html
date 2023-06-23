@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài-tổng-hợp-DOM-EVENT</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form">
+        <h2>Thông tin học viên</h2>
+        <form action="#">
+            <label for="studentId">StudentId</label>
+        <input type="text" name="studentId" id="studentId"><br/>
+
+        <label for="studentName">StudentName</label>
+        <input type="text" name="studentName" id="studentName"><br/>
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" id="email"><br/>
+
+        <label for="place">Place</label>
+        <input type="text" name="place" id="place"><br/>
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone"><br/>
+
+        <label for="sex">Sex</label>
+        <input type="radio" name="sex" id="male" value="male" checked = true><label for="male">Male</label>
+        <input type="radio" name="sex" id="female" value="female"><label for="female">Female</label><br/>
+
+        <input type="submit" value="Save" id="btnSave"/>
+        </form>
+    </div>
+    <div class="table">
+        <h2>Danh sách học viên</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>StudentId</td>
+                    <td>StudentName</td>
+                    <td>Email</td>
+                    <td>Place</td>
+                    <td>Phone</td>
+                    <td>Sex</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody id="content">
+                
+                
+            </tbody>
+    </div>
+    <script src="./add.js"></script>
+</body>
+</html>
